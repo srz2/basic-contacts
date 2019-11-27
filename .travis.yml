@@ -1,0 +1,9 @@
+lanauage: nodejs
+
+node_js:
+  - node
+
+# safelist
+branches:
+  only:
+    - master

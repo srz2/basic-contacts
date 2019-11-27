@@ -1,6 +1,8 @@
 Basic Contacts
 ==============
 
+[![Build Status](https://travis-ci.org/srz2/basic-contacts.svg?branch=master)](https://travis-ci.org/srz2/basic-contacts)
+
 This is a basic application to create, query, and delete contacts from a database.
 
 ## How to Use
