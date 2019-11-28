@@ -25,8 +25,10 @@ app.use(parser.json());
 
 // Route Setup
 const routeContacts = require('./routes/contacts');
+const routeGroups = require('./routes/groups');
 
 app.use('/contacts', routeContacts);
+app.use('/groups', routeGroups);
 
 app.use((req, res, next) => {
     res.status(404).send('404 Page Not Found!');
