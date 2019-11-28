@@ -12,7 +12,7 @@ router.get('/', (req, res, next) => {
         console.log(results);
         res.status(200).json({
             count: results.length,
-            message: 'All contacts retreived',
+            message: 'All contacts retrieved',
             contacts: results
         })
     })
