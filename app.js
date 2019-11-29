@@ -23,10 +23,14 @@ app.use(favicon('./favicon.ico'));
 
 app.use(parser.json());
 
+app.use(express.static('public'));
+
 // Route Setup
+const routeMain = require('./routes/main');
 const routeContacts = require('./routes/contacts');
 const routeGroups = require('./routes/groups');
 
+app.use('/', routeMain);
 app.use('/contacts', routeContacts);
 app.use('/groups', routeGroups);
 
